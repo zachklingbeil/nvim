@@ -11,7 +11,6 @@ return {
 	{ "echasnovski/mini.surround", version = "*", opts = {} },
 	{ "echasnovski/mini.move", version = "*", opts = {} },
 	{ "echasnovski/mini.cursorword", version = "*", opts = {} },
-	{ "echasnovski/mini.completion", version = "*", opts = {} },
 	{ "echasnovski/mini.snippets", version = "*", opts = {} },
 	{ "echasnovski/mini.indentscope", version = "*", opts = {} },
 	{ "echasnovski/mini.pairs", version = "*", opts = {} },

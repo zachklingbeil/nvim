@@ -30,7 +30,6 @@ require("config.globals")
 require("config.options")
 require("config.keymaps")
 require("config.autocmds")
-require("config.lsp")
 
 local plugins_dir = "plugins"
 
@@ -47,3 +46,5 @@ require("lazy").setup({
 	install = { colorscheme = { "tokyodark" } },
 	checker = { enabled = true },
 })
+
+require("config.lsp")

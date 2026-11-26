@@ -27,11 +27,6 @@ M.on_attach = function(client, bufnr)
 	keymap("n", "<leader>ws", "<cmd>FzfLua lsp_workspace_symbols<CR>", opts) -- Search for any symbol across the entire project/workspace
 	keymap("n", "<leader>gi", "<cmd>FzfLua lsp_implementations<CR>", opts) -- Go to implementation
 
-	-- native LSP completion (no external completion plugin)
-	if client:supports_method("textDocument/completion") then
-		vim.lsp.completion.enable(true, client.id, bufnr, { autotrigger = true })
-	end
-
 	-- Order Imports (if supported by the client LSP)
 	if client:supports_method("textDocument/codeAction") then
 		keymap("n", "<leader>oi", function()

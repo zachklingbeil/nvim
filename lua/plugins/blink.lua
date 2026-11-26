@@ -28,7 +28,7 @@ return {
     -- See :h blink-cmp-config-keymap for defining your own keymap
     keymap = { preset = 'default' },
 
-    -- (Default) Only show the documentation popup when manually triggered
+    -- Show documentation automatically when a suggestion is selected
     completion = { documentation = { auto_show = true} },
 
     -- (Default) list of enabled providers defined so that you can extend it
